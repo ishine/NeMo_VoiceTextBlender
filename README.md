@@ -1,7 +1,9 @@
-# VoiceTextBlender: Augmenting Large Language Models with Speech Capabilities via Single-Stage Joint Speech-Text Supervised Fine-Tuning
+# VoiceTextBlender
 
 
-This repo contains the code for our NAACL 2025 paper: [VoiceTextBlender](https://arxiv.org/abs/2410.17485)
+This repo contains the code for our paper:
+
+Yifan Peng*, Krishna C. Puvvada*, Zhehuai Chen*, Piotr Zelasko, He Huang, Kunal Dhawan, Ke Hu, Shinji Watanabe, Jagadeesh Balam, and Boris Ginsburg, "VoiceTextBlender: Augmenting Large Language Models with Speech Capabilities via Single-Stage Joint Speech-Text Supervised Fine-Tuning," in Proc. NAACL, 2025. (accepted) [[arXiv](https://arxiv.org/abs/2410.17485)]
 
 ## Overview
 
