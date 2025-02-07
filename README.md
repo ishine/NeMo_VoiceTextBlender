@@ -15,7 +15,7 @@ To extend beyond speech-based QA tasks, we propose a novel data generation metho
 
 ## Installation
 
-The code is based on NVIDIA NeMo.
+The code is based on an old version of NVIDIA [NeMo](https://github.com/NVIDIA/NeMo).
 
 ## Generating speech SFT data
 
