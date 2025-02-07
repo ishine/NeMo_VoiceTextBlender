@@ -13,6 +13,9 @@ Furthermore, our model exhibits emergent capabilities in handling previously uns
 Specifically, we combine multi-turn text-only SFT data with single-turn speech-related SFT data during training.
 To extend beyond speech-based QA tasks, we propose a novel data generation method that can create mixed-modal interleaving speech-text inputs.
 
+## Installation
+
+The code is based on NVIDIA NeMo.
 
 ## Generating speech SFT data
 
