@@ -10,6 +10,10 @@ Recent studies have augmented large language models (LLMs) with speech understan
 In this work, we propose a novel training pipeline, which streamlines the training process, enhances speech understanding performance, and maintains text-only performance of SpeechLMs.
 Specifically, we combine multi-turn text-only supervised fine-tuning (SFT) data with three types of single-turn speech-related SFT data and perform single-stage training.
 
+The main results and ablation studies are presented below.
+
+![results](imgs/results.png)
+
 ## Demonstrations
 
 Please find various demonstrations in our paper or the [`imgs`](imgs/) directory in this repo.
