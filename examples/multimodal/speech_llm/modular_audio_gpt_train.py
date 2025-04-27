@@ -23,27 +23,6 @@ from nemo.utils.exp_manager import exp_manager
 
 mp.set_start_method("spawn", force=True)
 
-"""
-MEGATRON_CKPT=/path/to/megatron-llm.nemo
-ASR_MODEL=/path/to/asr-model.nemo
-
-TRAIN_MANIFESTS="[/data/train_1.json,/data/train_2.json]"
-VAL_MANIFESTS="[/data/dev_1.json,/data/dev_2.json]"
-VAL_NAMES="[dev-1,dev-2]"
-
-CUDA_VISIBLE_DEVICES="0,1" python modular_audio_gpt_train.py --config-path="./conf" --config-name "modular_audio_gpt_config_peft" \
-    trainer.devices=-1 \
-    model.freeze_audio_encoder=True \
-    model.freeze_llm=True \
-    model.global_batch_size=4 \
-    model.micro_batch_size=2 \
-    model.pretrained_audio_model=$ASR_MODEL \
-    model.restore_from_path=$MEGATRON_MODEL \
-    model.data.train_ds.manifest_filepath=$TRAIN_MANIFESTS \
-    model.data.validation_ds.manifest_filepath=$VAL_MANIFESTS \
-    ++model.data.validation_ds.names=$VAL_NAMES \
-"""
-
 
 @hydra_runner(config_path="conf", config_name="modular_audio_gpt_config_peft")
 def main(cfg) -> None:
