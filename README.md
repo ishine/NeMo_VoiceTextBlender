@@ -58,6 +58,20 @@ The inference script is [`examples/multimodal/speech_llm/modular_audio_gpt_eval.
 
 We provide an example launching script for SQA: [`test_sqa.sh`](vtblender_scripts/test_sqa.sh)
 
+For SQA, we use OpenAI's GPT API for scoring. The system prompt is below:
+```
+You are an expert evaluator of question-answering performance.
+Your task is to evaluate the "correctness" and "redundancy" of an AI assistant's response to a user question based on the provided context.
+Provide your output following the schema provided.
+Here is a description of the required fields:
+- correctness_score: either 0 or 1
+    - Score 0: The AI assistant's answer is incorrect based on the provided context, or the AI assistant's answer simply copies the context.
+    - Score 1: The AI assistant's answer is correct based on the provided context, and it does not simply copy the context.
+- correctness_explanation: explanation of your score for "correctness".
+- redundancy_score: an integer score between 1 and 10, where a higher score indicates that the AI assistant's answer copies more redundant information from the context.
+- redundancy_explanation: explanation of your score for "redundancy".
+```
+
 ## Citation
 ```BibTeX
 @inproceedings{vtblender,
