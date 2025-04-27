@@ -12,7 +12,7 @@ Specifically, we combine multi-turn text-only supervised fine-tuning (SFT) data 
 
 ## Demonstrations
 
-Please find various demonstrations in our paper or the `imgs` directory in this repo.
+Please find various demonstrations in our paper or the [`imgs`](imgs/) directory in this repo.
 
 ## Installation
 
